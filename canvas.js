@@ -70,6 +70,7 @@ let i = 0;
 const vertexArray = createEquilateralTriangle();
 const pointsArray = [];
 
+// // test 
 // function animate() {
 //     setTimeout(() => {
 //         requestAnimationFrame(animate);
@@ -102,7 +103,7 @@ const pointsArray = [];
 const batchSize = 100;
 
 function animate() {
-    if (pointsArray.length < 25000) {
+    if (pointsArray.length < 250000) {
         requestAnimationFrame(animate);
     }
     i++;
