@@ -34,7 +34,13 @@ class Vector {
     }
 
     dot(v) {
-        return this.x * v.x + this.y * v.y;
+        if (v instanceof Vector) return this.x * v.x + this.y * v.y;
+        else return undefined;
+    }
+
+    cross(v) {
+        if (v instanceof Vector) return this.x * v.y - this.y * v.x;
+        else return undefined;
     }
 
     toArray() {
