@@ -108,7 +108,7 @@ const pointsArray = [];
 const batchSize = 1000;
 
 function animate() {
-    if (pointsArray.length < 1000000) {
+    if (pointsArray.length < 500000) {
         requestAnimationFrame(animate);
     }
 
